@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
+  <style>
+    /* Services Section */
+#services .services {
+	flex-direction: column;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+#services .service-top {
+	width: 100%;
+	margin: 0 auto;
+}
+#services .service-bottom {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+#services .service-item {
+	flex-basis: 80%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+	border-radius: 10px;
+	background-image: url(https://i.pinimg.com/564x/60/0c/82/600c82fc5a99282a99763297c3309661.jpg);
+	background-size: cover;
+	margin: 10px 5%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+#services .service-item::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: 0.9;
+	z-index: -1;
+}
+#services .service-bottom .icon {
+	height: 80px;
+	width: 80px;
+	margin-bottom: 20px;
+}
+#services .service-item h2 {
+	font-size: 2rem;
+	color: white;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+#services .service-item p {
+	color: white;
+	text-align: left;
+}
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>Free </span>Fire <span>Tournaments</span></h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#services" data-after="Service">Services</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Hello, <span></span></h1>
+        <h1>MY NAME IS <span></span></h1>
+        <h1>FFT<span></span></h1>
+        <a href="#about" type="button" class="cta">PAY NOW</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- Service Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">Serv<span>i</span>ces</h1>
+        <p>Welcome to our premier Free Fire tournament services! We offer an exciting platform for Free Fire Players to showcase their skills, compete against top Players [solo], and win fantastic prizes. </p>
+      </div>
+      <div class="service-bottom">
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>rules and regulations</h2>
+          <p>1. There will be only one match in a day.<br>
+            2. The timing in 8pm to 9pm.<br>
+            3. When your paying amount resend all the details which you have filled in register form.<br>
+            4. After paying amount your qualified in contest.<br>
+            5. Stay tuned , best of luck.<br></p>
+            <img class="glass-effect" src="https://github.com/FreeFireTournamentsOrg/Data/blob/main/1000423245.jpg?raw=true">
+        </div>
+      </div>
+    </div>
+    
+    </div>
+  </section>
+  <!-- End Service Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="https://github.com/FreeFireTournamentsOrg/Data/blob/main/png/logo-color.png?raw=true" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+        <h2>FFT</h2>
+        <p>Hey there! I'm FFTO [Free Fire Tournament Organizer], a passionate gamer and esports enthusiast dedicated to creating unforgettable gaming experiences and fostering vibrant communities within the gaming world.<br><br>
+
+          With a deep love for competitive gaming, I've immersed myself in the exciting realm of Free Fire tournaments. As an avid player and organizer, I've had the privilege of bringing together like-minded individuals to showcase their skills, forge lasting friendships, and compete for glory in the virtual battlegrounds of Free Fire.<br><br>
+          
+          Driven by my passion for gaming and my desire to contribute to the ever-evolving esports landscape, I've embarked on a journey to create innovative platforms, events, and resources tailored to the needs of gamers and esports enthusiasts worldwide.<br><br>
+          
+          Whether it's organizing thrilling tournaments, developing cutting-edge gaming technology, or building inclusive gaming communities, I'm committed to pushing the boundaries of what's possible in the world of gaming and esports.<br><br>
+          
+          Join me on this exhilarating adventure as we explore new horizons, celebrate the thrill of competition, and embrace the camaraderie that unites us all in our shared love for gaming.<br><br>
+          
+          Let's level up together!</p>
+        <a href="https://docs.google.com/document/d/1592S_jJIWHnqt6H_oc2GwM4ZIZQz3FVyH070df959ZA/edit?usp=sharing" class="cta">Download QR Code To Pay</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>+91 8553295375</h2>
+         </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>managerofft@gmail.com</h1>          
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>Free </span>Fire <span>Tournaments</span></h1>
+      </div>
+      <h2>FFT</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+      </div>
+      <p>Copyright © 2024 Prajith. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+</body>
+
+</html>
